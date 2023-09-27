@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Steel.h"
+#include "Material.h"
 
 using std::cout;
 
@@ -13,7 +13,7 @@ int main()
     cout << steel.getResielence() << "\n";*/
 
     cout << "Parametric!\n";
-    Steel steel2((char*)arrMaterial[1], (char*)arrQuality[2]);
+    Material steel2((char*)arrMaterial[1], (char*)arrQuality[2]);
 
     cout << steel2.getTypeSteel() << "\n";
     cout << steel2.getHardness() << "\n";

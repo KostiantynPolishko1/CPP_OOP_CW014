@@ -1,44 +1,31 @@
 #pragma once
-#include "Data.h"
+#include "Property.h"
 
-#ifndef MATERIAL_H
-#define MATERIAL_H
+#ifndef STEEL_H
+#define STEEL_H
 
-class Material
+class Material : public Property
 {
 protected:
-	
-	short _hardness;
-	short _resielence;
-	short _durality;
-
-	Material()
-	{
-		_hardness = arrHardness[0][0];
-		_resielence = arrResielence[0][0];
-		_durality = arrDurality[0][0];
-	}
-
-	Material(char* material, char* quality)
-	{
-		_hardness = setHardness(material, quality);
-		_resielence = setResielence(material, quality);
-		_durality = setDurality(material, quality);
-	}
-
-	short setHardness(char* material, char* quality);
-
-	short setResielence(char* material, char* quality);
-
-	short setDurality(char* material, char* quality);
+	char* _material;
 
 public:
+	Material() : Property()
+	{
+		_material = (char*)"LowCarbon";
+	}
 
-	short getHardness();
+	Material(char* material, char* quality) : Property(material, quality)
+	{
+		_material = material;
+	}
 
-	short getResielence();
+	~Material() {
+		_material = nullptr;
+	}
+	
+	char* getTypeSteel();
 
-	short getDurality();
 }
 ;
 #endif

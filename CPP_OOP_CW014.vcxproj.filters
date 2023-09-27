@@ -19,30 +19,42 @@
     <Filter Include="Source Files\Material">
       <UniqueIdentifier>{a3dca4e6-86da-47b0-88d4-222174b5b631}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Component">
+      <UniqueIdentifier>{c8323b72-129c-4746-8dad-818961b71171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Component">
+      <UniqueIdentifier>{01ef3554-0252-4dfe-a6c9-ea52e380a7cf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CPP_OOP_CW014.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Material.cpp">
+    <ClCompile Include="Property.cpp">
       <Filter>Source Files\Material</Filter>
     </ClCompile>
     <ClCompile Include="Data.cpp">
       <Filter>Source Files\Material</Filter>
     </ClCompile>
-    <ClCompile Include="Steel.cpp">
+    <ClCompile Include="Blade.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
       <Filter>Source Files\Material</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Steel.h">
+    <ClInclude Include="Material.h">
       <Filter>Header Files\Material</Filter>
     </ClInclude>
-    <ClInclude Include="Material.h">
+    <ClInclude Include="Property.h">
       <Filter>Header Files\Material</Filter>
     </ClInclude>
     <ClInclude Include="Data.h">
       <Filter>Header Files\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Blade.h">
+      <Filter>Header Files\Component</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
