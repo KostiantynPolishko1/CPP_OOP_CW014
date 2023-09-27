@@ -9,10 +9,10 @@ class Material : public Property
 protected:
 	char* _material;
 
-public:
+protected:
 	Material() : Property()
 	{
-		_material = (char*)"LowCarbon";
+		_material = (char*)arrMaterial[WOOD];
 	}
 
 	Material(char* material, char* quality) : Property(material, quality)
@@ -23,9 +23,9 @@ public:
 	~Material() {
 		_material = nullptr;
 	}
-	
-	char* getTypeSteel();
 
+public:	
+	char* getMaterial();
 }
 ;
 #endif

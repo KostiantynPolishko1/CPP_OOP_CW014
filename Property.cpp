@@ -7,7 +7,7 @@ short Property::setHardness(char* material, char* quality) {
                 if (quality == arrQuality[j])
                     return arrHardness[i][j];
 
-    return arrHardness[0][0];
+    return arrHardness[WOOD][LOW];
 }
 ;
 short Property::setResielence(char* material, char* quality) {
@@ -17,7 +17,7 @@ short Property::setResielence(char* material, char* quality) {
 				if (quality == arrQuality[j])
 					return arrResielence[i][j];
 
-    return arrResielence[0][0];
+    return arrResielence[WOOD][LOW];
 }
 ;
 short Property::setDurality(char* material, char* quality) {
@@ -27,7 +27,7 @@ short Property::setDurality(char* material, char* quality) {
 				if (quality == arrQuality[j])
 					return arrDurality[i][j];
 
-	return arrResielence[0][0];
+	return arrResielence[WOOD][LOW];
 }
 ;
 short Property::getHardness() {

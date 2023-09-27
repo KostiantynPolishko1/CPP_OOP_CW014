@@ -1,5 +1,5 @@
 #include "Material.h"
 
-char* Material::getTypeSteel() {
+char* Material::getMaterial() {
     return _material;
 }

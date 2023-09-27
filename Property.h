@@ -14,9 +14,9 @@ protected:
 
 	Property()
 	{
-		_hardness = arrHardness[0][0];
-		_resielence = arrResielence[0][0];
-		_durality = arrDurality[0][0];
+		_hardness = arrHardness[WOOD][LOW];
+		_resielence = arrResielence[WOOD][LOW];
+		_durality = arrDurality[WOOD][LOW];
 	}
 
 	Property(char* material, char* quality)
