@@ -5,6 +5,7 @@
 char* arrTypeSteel[];
 short size[];
 short arrHardness[];
-int arrResielence[];
+short arrResielence[];
+short arrDurality[];
 
 #endif
