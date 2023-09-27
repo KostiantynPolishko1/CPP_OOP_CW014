@@ -4,9 +4,9 @@ short Property::setHardness(char* material, char* quality)
 {
 	int i(0), j(0);
 	for (char** iter = arrMaterial; iter != arrMaterial + sizeMaterial; iter++, i++)
-		if (material = *iter)
-			for (char** jter = arrQuality; jter != arrMaterial + sizeMaterial; jter++, j++)
-				if (material = *jter)
+		if (material == *iter)
+			for (char** jter = arrQuality; jter != arrQuality + sizeQuality; jter++, j++)
+				if (quality == *jter)
 					return arrHardness[i][j];
 
     return arrHardness[WOOD][LOW];
@@ -14,34 +14,23 @@ short Property::setHardness(char* material, char* quality)
 ;
 short Property::setResielence(char* material, char* quality) 
 {
-	/*for (short i = 0; i < sizeMaterial; i++)
-		if (material == arrMaterial[i])
-			for (short j = 0; j < sizeQuality; j++)
-				if (quality == arrQuality[j])
-					return arrResielence[i][j];*/
-
 	int i(0), j(0);
 	for (char** iter = arrMaterial; iter != arrMaterial + sizeMaterial; iter++, i++)
-		if (material = *iter)
-			for (char** jter = arrQuality; jter != arrMaterial + sizeMaterial; jter++, j++)
-				if (material = *jter)
+		if (material == *iter)
+			for (char** jter = arrQuality; jter != arrQuality + sizeQuality; jter++, j++)
+				if (quality == *jter)
 					return arrResielence[i][j];
 
     return arrResielence[WOOD][LOW];
 }
 ;
-short Property::setDurality(char* material, char* quality) {
-	/*for (short i = 0; i < sizeMaterial; i++)
-		if (material == arrMaterial[i])
-			for (short j = 0; j < sizeQuality; j++)
-				if (quality == arrQuality[j])
-					return arrDurality[i][j];*/
-
+short Property::setDurality(char* material, char* quality) 
+{
 	int i(0), j(0);
 	for (char** iter = arrMaterial; iter != arrMaterial + sizeMaterial; iter++, i++)
-		if (material = *iter)
-			for (char** jter = arrQuality; jter != arrMaterial + sizeMaterial; jter++, j++)
-				if (material = *jter)
+		if (material == *iter)
+			for (char** jter = arrQuality; jter != arrQuality + sizeQuality; jter++, j++)
+				if (quality == *jter)
 					return arrDurality[i][j];
 
 	return arrDurality[WOOD][LOW];

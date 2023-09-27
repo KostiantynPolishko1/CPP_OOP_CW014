@@ -19,7 +19,8 @@ public:
 		_weight = setWeight(arrMaterial[WOOD], _lenght);
 	}
 
-	Blade(char* shape, char* material, char* quality) : Material(material, quality)
+	Blade(char* shape, char* material = (char*)arrMaterial[WOOD], char* quality = (char*)arrQuality[LOW])
+	: Material(material, quality)
 	{
 		_shape = shape;
 		_lenght = setLength(material);

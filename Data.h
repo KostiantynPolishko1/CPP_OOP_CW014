@@ -2,6 +2,13 @@
 #ifndef DATA_H
 #define DATA_H
 
+enum BladeShape {
+	NORMAL,
+	REAL_TANTO,
+	GUT_HOOK,
+	HAWKBILL
+}
+;
 enum TypeMaterial {
 	WOOD,
 	BRASS,
@@ -12,13 +19,6 @@ enum QualityMaterial {
 	LOW,
 	MIDDLE,
 	HIGH
-}
-;
-enum BladeShape {
-	NORMAL,
-	REAL_TANTO,
-	GUT_HOOK,
-	HAWKBILL
 }
 ;
 
