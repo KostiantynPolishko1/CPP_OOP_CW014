@@ -5,7 +5,7 @@ using std::cout;
 
 int main()
 {
-    /*cout << "Default!\n";
+   /* cout << "Default!\n";
     Steel steel;
 
     cout << steel.getTypeSteel() << "\n";
@@ -13,7 +13,7 @@ int main()
     cout << steel.getResielence() << "\n";*/
 
     cout << "Parametric!\n";
-    Steel steel2((char*)arrTypeSteel[2]);
+    Steel steel2((char*)arrMaterial[1], (char*)arrQuality[2]);
 
     cout << steel2.getTypeSteel() << "\n";
     cout << steel2.getHardness() << "\n";

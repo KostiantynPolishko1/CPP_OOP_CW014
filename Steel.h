@@ -7,21 +7,21 @@
 class Steel : public Material
 {
 protected:
-	char* _typeSteel;
+	char* _material;
 
 public:
 	Steel() : Material() 
 	{
-		_typeSteel = (char*)"LowCarbon";
+		_material = (char*)"LowCarbon";
 	}
 
-	Steel(char* typeSteel) : Material(typeSteel)
+	Steel(char* material, char* quality) : Material(material, quality)
 	{
-		_typeSteel = typeSteel;
+		_material = material;
 	}
 
 	~Steel() {
-		_typeSteel = nullptr;
+		_material = nullptr;
 	}
 	
 	char* getTypeSteel();

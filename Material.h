@@ -14,23 +14,23 @@ protected:
 
 	Material()
 	{
-		_hardness = arrHardness[0];
-		_resielence = arrResielence[0];
-		_durality = arrDurality[0];
+		_hardness = arrHardness[0][0];
+		_resielence = arrResielence[0][0];
+		_durality = arrDurality[0][0];
 	}
 
-	Material(char* typeSteel)
+	Material(char* material, char* quality)
 	{
-		_hardness = setHardness(typeSteel);
-		_resielence = setResielence(typeSteel);
-		_durality = setDurality(typeSteel);
+		_hardness = setHardness(material, quality);
+		_resielence = setResielence(material, quality);
+		_durality = setDurality(material, quality);
 	}
 
-	short setHardness(char* typeSteel);
+	short setHardness(char* material, char* quality);
 
-	short setResielence(char* typeSteel);
+	short setResielence(char* material, char* quality);
 
-	short setDurality(char* typeSteel);
+	short setDurality(char* material, char* quality);
 
 public:
 

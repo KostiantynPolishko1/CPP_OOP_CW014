@@ -2,10 +2,14 @@
 #ifndef DATA_H
 #define DATA_H
 
-char* arrTypeSteel[];
-short size[];
-short arrHardness[];
-short arrResielence[];
-short arrDurality[];
+char* arrMaterial[];
+char* arrQuality[];
+
+short sizeMaterial[];
+short sizeQuality[];
+
+short arrHardness[][3];
+short arrResielence[][3];
+short arrDurality[][3];
 
 #endif

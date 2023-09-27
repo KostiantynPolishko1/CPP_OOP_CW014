@@ -1,27 +1,33 @@
 #include "Material.h"
 
-short Material::setHardness(char* typeSteel) {
-    for (short i = 0; i < size[0]; i++)
-        if (typeSteel == arrTypeSteel[i])
-            return arrHardness[i];
+short Material::setHardness(char* material, char* quality) {
+	for (short i = 0; i < sizeMaterial[0]; i++)
+		if (material == arrMaterial[i])
+			for (short j = 0; j < sizeQuality[0]; j++)
+                if (quality == arrQuality[j])
+                    return arrHardness[i][j];
 
-    return arrHardness[0];
+    return arrHardness[0][0];
 }
 ;
-short Material::setResielence(char* typeSteel) {
-    for (short i = 0; i < size[0]; i++)
-        if (typeSteel == arrTypeSteel[i])
-            return arrResielence[i];
+short Material::setResielence(char* material, char* quality) {
+	for (short i = 0; i < sizeMaterial[0]; i++)
+		if (material == arrMaterial[i])
+			for (short j = 0; j < sizeQuality[0]; j++)
+				if (quality == arrQuality[j])
+					return arrResielence[i][j];
 
-    return arrResielence[0];
+    return arrResielence[0][0];
 }
 ;
-short Material::setDurality(char* typeSteel) {
-	for (short i = 0; i < size[0]; i++)
-		if (typeSteel == arrTypeSteel[i])
-			return arrDurality[i];
+short Material::setDurality(char* material, char* quality) {
+	for (short i = 0; i < sizeMaterial[0]; i++)
+		if (material == arrMaterial[i])
+			for (short j = 0; j < sizeQuality[0]; j++)
+				if (quality == arrQuality[j])
+					return arrDurality[i][j];
 
-	return arrResielence[0];
+	return arrResielence[0][0];
 }
 ;
 short Material::getHardness() {
