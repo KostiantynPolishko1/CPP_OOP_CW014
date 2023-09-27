@@ -25,8 +25,8 @@ enum BladeShape {
 char* arrMaterial[];
 char* arrQuality[];
 
-short sizeMaterial[];
-short sizeQuality[];
+extern const short sizeMaterial;
+extern const short sizeQuality;
 
 short arrHardness[][3];
 short arrResielence[][3];

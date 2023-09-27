@@ -4,8 +4,8 @@
 char* arrMaterial[] = { (char*)"Wood", (char*)"Brass", (char*)"Steel" };
 char* arrQuality[] = { (char*)"Low", (char*)"Middle", (char*)"High" };
 
-short sizeQuality[] = { sizeof(arrQuality) / sizeof(arrQuality[0]) };
-short sizeMaterial[] = { sizeof(arrMaterial) / sizeof(arrMaterial[0]) };
+extern const short sizeQuality = sizeof(arrQuality) / sizeof(arrQuality[0]);
+extern const short sizeMaterial = sizeof(arrMaterial) / sizeof(arrMaterial[0]);
 
 short arrHardness[][3] = { {45, 50, 55} , {35, 40, 45}, {25, 30, 35} };
 short arrResielence[][3] = { {40, 50, 60}, {30, 40, 50}, {20, 30, 40} };
