@@ -25,6 +25,7 @@ enum QualityMaterial {
 char* arrMaterial[];
 char* arrQuality[];
 
+extern const short sizeBladeShape;
 extern const short sizeMaterial;
 extern const short sizeQuality;
 

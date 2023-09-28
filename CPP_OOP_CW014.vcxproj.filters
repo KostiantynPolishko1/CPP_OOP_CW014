@@ -51,7 +51,7 @@
     <ClCompile Include="Output.cpp">
       <Filter>Source Files\Module</Filter>
     </ClCompile>
-    <ClCompile Include="Input.cpp">
+    <ClCompile Include="SelectMenu.cpp">
       <Filter>Source Files\Module</Filter>
     </ClCompile>
   </ItemGroup>
@@ -68,10 +68,10 @@
     <ClInclude Include="Blade.h">
       <Filter>Header Files\Component</Filter>
     </ClInclude>
-    <ClInclude Include="Input.h">
+    <ClInclude Include="Output.h">
       <Filter>Header Files\Module</Filter>
     </ClInclude>
-    <ClInclude Include="Output.h">
+    <ClInclude Include="SelectMenu.h">
       <Filter>Header Files\Module</Filter>
     </ClInclude>
   </ItemGroup>

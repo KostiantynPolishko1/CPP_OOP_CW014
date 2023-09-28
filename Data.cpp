@@ -1,10 +1,11 @@
 #include "Data.h"
 #include <wchar.h>
 
+char* arrBladeShape[] = { (char*)"Normal Blade", (char*)"Real Tanto", (char*)"Gut Hook", (char*)"Hawkbill" };
 char* arrMaterial[] = { (char*)"Wood", (char*)"Brass", (char*)"Steel" };
 char* arrQuality[] = { (char*)"Low", (char*)"Middle", (char*)"High" };
-char* arrBladeShape[] = { (char*)"Normal Blade", (char*)"Real Tanto", (char*)"Gut Hook", (char*)"Hawkbill" };
 
+extern const short sizeBladeShape = sizeof(arrBladeShape) / sizeof(arrBladeShape[0]);
 extern const short sizeQuality = sizeof(arrQuality) / sizeof(arrQuality[0]);
 extern const short sizeMaterial = sizeof(arrMaterial) / sizeof(arrMaterial[0]);
 
