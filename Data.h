@@ -6,7 +6,8 @@ enum BladeShape {
 	NORMAL,
 	REAL_TANTO,
 	GUT_HOOK,
-	HAWKBILL
+	HAWKBILL,
+	EXIT_SHAPE
 }
 ;
 enum TypeMaterial {
