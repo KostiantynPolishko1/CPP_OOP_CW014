@@ -2,9 +2,46 @@
 #ifndef DATA_H
 #define DATA_H
 
-char* arrTypeSteel[];
-short size[];
-short arrHardness[];
-int arrResielence[];
+enum BladeShape {
+	NORMAL,
+	REAL_TANTO,
+	GUT_HOOK,
+	HAWKBILL,
+	EXIT_SHAPE
+}
+;
+enum TypeMaterial {
+	WOOD,
+	BRASS,
+	STEEL
+}
+;
+enum QualityMaterial {
+	LOW,
+	MIDDLE,
+	HIGH
+}
+;
+
+char* arrMaterial[];
+char* arrQuality[];
+
+extern const short sizeBladeShape;
+extern const short sizeMaterial;
+extern const short sizeQuality;
+
+short arrHardness[][3];
+short arrResielence[][3];
+short arrDurality[][3];
+float arrBladeLength[];
+char* arrBladeShape[];
+
+extern const float densitySteel;
+extern const float densityBrass;
+extern const float densityWood;
+extern const float widthBlade;
+extern const float thkBlade;
+
+float arrDensity[];
 
 #endif

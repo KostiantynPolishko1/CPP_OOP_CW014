@@ -1,31 +1,36 @@
 #pragma once
-#ifndef MATERIAL_H
-#define MATERIAL_H
+#include "Property.h"
 
-class Material
+#ifndef STEEL_H
+#define STEEL_H
+
+class Material : public Property
 {
 protected:
-	
-	short _hardness;
-	int _resielence;
+	char* _material;
+	char* _quality;
 
 protected:
-	Material() : _hardness{ 50 }, _resielence { 100 }
-	{}
-
-	Material(short hardness, int resielence) {
-		_hardness = hardness;
-		_resielence = resielence;
+	Material() : Property()
+	{
+		_material = (char*)arrMaterial[WOOD];
+		_quality = (char*)arrQuality[LOW];
 	}
 
-public:
-	short getHardness() {
-		return _hardness;
+	Material(char* material, char* quality) : Property(material, quality)
+	{
+		_material = material;
+		_quality = quality;
 	}
-	
-	int getResielence() {
-		return _resielence;
+
+	~Material() {
+		_material = nullptr;
+		_quality = nullptr;
 	}
+
+public:	
+	char* getMaterial();
+	char* getQuality();
 }
 ;
 #endif
