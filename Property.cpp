@@ -39,11 +39,12 @@ short Property::setDurality(char* material, char* quality)
 short Property::getHardness() {
 	return _hardness;
 }
-
+;
 short Property::getResielence() {
 	return _resielence;
 }
-
+;
 short Property::getDurality() {
 	return _durality;
 }
+;

@@ -25,6 +25,12 @@
     <Filter Include="Header Files\Component">
       <UniqueIdentifier>{01ef3554-0252-4dfe-a6c9-ea52e380a7cf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Module">
+      <UniqueIdentifier>{78cd5357-2d29-401c-8ef6-34b4176d54e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Module">
+      <UniqueIdentifier>{eaa574ac-35d5-4932-89d7-236573bbe243}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CPP_OOP_CW014.cpp">
@@ -42,6 +48,12 @@
     <ClCompile Include="Material.cpp">
       <Filter>Source Files\Material</Filter>
     </ClCompile>
+    <ClCompile Include="Output.cpp">
+      <Filter>Source Files\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Source Files\Module</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Material.h">
@@ -55,6 +67,12 @@
     </ClInclude>
     <ClInclude Include="Blade.h">
       <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Header Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Output.h">
+      <Filter>Header Files\Module</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

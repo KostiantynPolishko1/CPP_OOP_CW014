@@ -130,12 +130,16 @@
     <ClCompile Include="Blade.cpp" />
     <ClCompile Include="CPP_OOP_CW014.cpp" />
     <ClCompile Include="Data.cpp" />
+    <ClCompile Include="Input.cpp" />
     <ClCompile Include="Material.cpp" />
+    <ClCompile Include="Output.cpp" />
     <ClCompile Include="Property.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Blade.h" />
     <ClInclude Include="Data.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="Output.h" />
     <ClInclude Include="Property.h" />
     <ClInclude Include="Material.h" />
   </ItemGroup>
