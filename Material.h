@@ -1,8 +1,8 @@
 #pragma once
 #include "Property.h"
 
-#ifndef STEEL_H
-#define STEEL_H
+#ifndef MATERIAL_H
+#define MATERIAL_H
 
 class Material : public Property
 {
