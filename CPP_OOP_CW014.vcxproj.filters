@@ -54,6 +54,9 @@
     <ClCompile Include="SelectMenu.cpp">
       <Filter>Source Files\Module</Filter>
     </ClCompile>
+    <ClCompile Include="Handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Material.h">
@@ -73,6 +76,9 @@
     </ClInclude>
     <ClInclude Include="SelectMenu.h">
       <Filter>Header Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Handler.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

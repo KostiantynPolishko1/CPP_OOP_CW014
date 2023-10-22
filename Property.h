@@ -1,8 +1,8 @@
 #pragma once
 #include "Data.h"
 
-#ifndef MATERIAL_H
-#define MATERIAL_H
+#ifndef PROPERTY_H
+#define PROPERTY_H
 
 class Property
 {
