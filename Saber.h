@@ -9,8 +9,7 @@ class Saber final:
     public CutWeapon
 {
 public:
-    Saber() : CutWeapon((char*)"Saber") {}
-
+    Saber() : CutWeapon(SINGLE_HANDED) {}
  }
 ;
 #endif

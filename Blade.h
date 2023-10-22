@@ -4,7 +4,8 @@
 #ifndef BLADE_H
 #define BLADE_H
 
-class Blade final: public Material
+class Blade final : 
+	public Material
 {
 protected:
 	char* _shape;
@@ -12,19 +13,34 @@ protected:
 	float _weight;
 
 public:
-	Blade() : Material()
-	{
-		_shape = arrBladeShape[NORMAL];
-		_lenght = arrBladeLength[WOOD];
-		_weight = setWeight(arrMaterial[WOOD], _lenght);
-	}
+	Blade() : Material(), _shape{}, _lenght{}, _weight{} {}
 
-	Blade(char* shape, char* material = (char*)arrMaterial[WOOD], char* quality = (char*)arrQuality[LOW])
-	: Material(material, quality)
-	{
-		_shape = shape;
-		_lenght = setLength(material);
-		_weight = setWeight(material, _lenght);
+	Blade(short kindSword) : Material(getKindMaterial(kindSword), getQualityMaterial(kindSword)) {
+
+		switch (kindSword)
+		{
+		case SINGLE_HANDED:
+			this->_shape = arrBladeCrossSection[LENTICULAR];
+			this->_lenght = arrBladeLength[NORMAL_L];
+			this->_weight = arrDensity[WOOD] * (_lenght * widthBlade * thkBlade);
+			break;
+
+		case TWO_and_HALF:
+			this->_shape = arrBladeCrossSection[CHIESELED];
+			this->_lenght = arrBladeLength[MIDDLE_L];
+			this->_weight = arrDensity[BRASS] * (_lenght * widthBlade * thkBlade);
+			break;
+
+		case DOUBLE_EDGED:
+			this->_shape = arrBladeCrossSection[DOUBLE_CHIESELED];
+			this->_lenght = arrBladeLength[LONG_L];
+			this->_weight = arrDensity[STEEL] * (_lenght * widthBlade * thkBlade);
+			break;
+
+		default:
+			Blade blade;
+			break;
+		}
 	}
 	
 	~Blade()
@@ -32,14 +48,10 @@ public:
 		_shape = nullptr;
 	}
 
-protected:
-	float setLength(char* material);
-	float setWeight(char* material, float length);
-
 public:
-	char* getBladeShape();
-	float getBladeLength();
-	float getBladeWeight();
+	char* getBladeShape() const;
+	float getBladeLength() const;
+	float getBladeWeight() const;
 }
 ;
 #endif

@@ -9,7 +9,7 @@ class Katana final:
     public CutWeapon
 {
 public:
-    Katana() : CutWeapon((char*)"Katana") {}
+    Katana() : CutWeapon(TWO_and_HALF) {}
 }
 ;
 #endif

@@ -31,22 +31,16 @@
     <Filter Include="Source Files\Module">
       <UniqueIdentifier>{eaa574ac-35d5-4932-89d7-236573bbe243}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Swords">
+      <UniqueIdentifier>{4c03c79a-0bb9-4232-8db1-e2b7dc641f85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Swords">
+      <UniqueIdentifier>{2610d2db-2925-4458-a362-a43097a038c3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CPP_OOP_CW014.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Property.cpp">
-      <Filter>Source Files\Material</Filter>
-    </ClCompile>
-    <ClCompile Include="Data.cpp">
-      <Filter>Source Files\Material</Filter>
-    </ClCompile>
-    <ClCompile Include="Blade.cpp">
-      <Filter>Source Files\Component</Filter>
-    </ClCompile>
-    <ClCompile Include="Material.cpp">
-      <Filter>Source Files\Material</Filter>
     </ClCompile>
     <ClCompile Include="Output.cpp">
       <Filter>Source Files\Module</Filter>
@@ -54,23 +48,38 @@
     <ClCompile Include="SelectMenu.cpp">
       <Filter>Source Files\Module</Filter>
     </ClCompile>
+    <ClCompile Include="Blade.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
     <ClCompile Include="Handler.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Stopper.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Data.cpp">
+      <Filter>Source Files\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>Source Files\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Property.cpp">
+      <Filter>Source Files\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="CutWeapon.cpp">
+      <Filter>Source Files\Swords</Filter>
+    </ClCompile>
+    <ClCompile Include="Katana.cpp">
+      <Filter>Source Files\Swords</Filter>
+    </ClCompile>
+    <ClCompile Include="Saber.cpp">
+      <Filter>Source Files\Swords</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapons.cpp">
+      <Filter>Source Files\Swords</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Material.h">
-      <Filter>Header Files\Material</Filter>
-    </ClInclude>
-    <ClInclude Include="Property.h">
-      <Filter>Header Files\Material</Filter>
-    </ClInclude>
-    <ClInclude Include="Data.h">
-      <Filter>Header Files\Material</Filter>
-    </ClInclude>
-    <ClInclude Include="Blade.h">
-      <Filter>Header Files\Component</Filter>
-    </ClInclude>
     <ClInclude Include="Output.h">
       <Filter>Header Files\Module</Filter>
     </ClInclude>
@@ -78,7 +87,34 @@
       <Filter>Header Files\Module</Filter>
     </ClInclude>
     <ClInclude Include="Handler.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Stopper.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Blade.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Data.h">
+      <Filter>Header Files\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Header Files\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Property.h">
+      <Filter>Header Files\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="CutWeapon.h">
+      <Filter>Header Files\Swords</Filter>
+    </ClInclude>
+    <ClInclude Include="Katana.h">
+      <Filter>Header Files\Swords</Filter>
+    </ClInclude>
+    <ClInclude Include="Saber.h">
+      <Filter>Header Files\Swords</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapons.h">
+      <Filter>Header Files\Swords</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

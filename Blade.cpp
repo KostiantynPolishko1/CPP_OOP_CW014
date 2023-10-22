@@ -1,32 +1,14 @@
 #include "Blade.h"
 
-float Blade::setLength(char* material) {
-	int i(0);
-	for (char **iter = arrMaterial; iter != arrMaterial + sizeMaterial; iter++, i++)
-		if(material == *iter)
-			return *(arrBladeLength + i);
-
-	return *(arrBladeLength + WOOD);
+char* Blade::getBladeShape() const {
+	return this->_shape;
 }
 ;
-float Blade::setWeight(char* material, float length) {
-	int i(0);
-	for (char** iter = arrMaterial; iter != arrMaterial + sizeMaterial; iter++, i++)
-		if (material == *iter)
-			return (*(arrDensity + i) * length * widthBlade * thkBlade) * 1000;
-
-	return (*(arrDensity + WOOD) * length * widthBlade * thkBlade) * 1000;;
+float Blade::getBladeLength() const {
+	return this->_lenght;
 }
 ;
-char* Blade::getBladeShape() {
-	return _shape;
-}
-;
-float Blade::getBladeLength() {
-	return _lenght;
-}
-;
-float Blade::getBladeWeight() {
-	return _weight;
+float Blade::getBladeWeight() const {
+	return this->_weight;
 }
 ;

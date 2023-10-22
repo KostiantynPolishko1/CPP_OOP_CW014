@@ -16,8 +16,11 @@ private:
 	Stopper stopper;
 
 protected:
-	CutWeapon(char* name) : blade{}, handler{}, stopper{} {
-		this->name = name;
+	CutWeapon(short kindSword) {
+		this->name = arrKindSwords[kindSword];
+		this->blade = Blade(kindSword);
+		this->handler = Handler(kindSword);
+		this->stopper = Stopper(kindSword);
 	}
 
 public:

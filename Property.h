@@ -12,33 +12,21 @@ protected:
 	short _resielence;
 	short _durality;
 
-	Property()
-	{
-		_hardness = arrHardness[WOOD][LOW];
-		_resielence = arrResielence[WOOD][LOW];
-		_durality = arrDurality[WOOD][LOW];
+	Property() : _hardness{}, _resielence{}, _durality{} {}
+
+	Property(short kindMaterial, short qualityMaterial) {
+		this->_hardness = arrHardness[kindMaterial][qualityMaterial];
+		this->_resielence = arrResielence[kindMaterial][qualityMaterial];
+		this->_durality = arrDurality[kindMaterial][qualityMaterial];
 	}
-
-	Property(char* material, char* quality)
-	{
-		_hardness = setHardness(material, quality);
-		_resielence = setResielence(material, quality);
-		_durality = setDurality(material, quality);
-	}
-
-	short setHardness(char* material, char* quality);
-
-	short setResielence(char* material, char* quality);
-
-	short setDurality(char* material, char* quality);
-
+	
 public:
 
-	short getHardness();
+	short getHardness() const;
 
-	short getResielence();
+	short getResielence() const;
 
-	short getDurality();
+	short getDurality() const;
 }
 ;
 #endif
