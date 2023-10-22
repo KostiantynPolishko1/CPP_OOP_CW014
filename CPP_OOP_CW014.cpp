@@ -1,10 +1,12 @@
-//#include "Weapons.h"
-#include "Saber.h"
+#include "Weapons.h"
+//#include "Saber.h"
 
 int main() {
 
-	//Weapons sword;
-	Saber saber;
+	Weapons sword;
+	sword[1];
+
+	//Saber saber;
 
 	return 0;
 }
